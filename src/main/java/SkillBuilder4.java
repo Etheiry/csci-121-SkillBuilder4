@@ -33,11 +33,12 @@ public class SkillBuilder4 {
             if (s.toLowerCase().charAt(index) == 'y' && LOOKFORY) {
                 y_index = index;
                 LOOKFORY = false;
-            }
-
-            if (!LOOKFORT && !LOOKFORY) {
                 return s.substring(t_index, y_index+1);
             }
+
+            // if (!LOOKFORT && !LOOKFORY) {
+            //     return s.substring(t_index, y_index+1);
+            // }
 
             index++;
         }
